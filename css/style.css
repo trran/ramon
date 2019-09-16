@@ -1,0 +1,206 @@
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ce8ak3');
+  src:  url('../fonts/icomoon.eot?ce8ak3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ce8ak3') format('truetype'),
+    url('../fonts/icomoon.woff?ce8ak3') format('woff'),
+    url('../fonts/icomoon.svg?ce8ak3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  /* color: rgb(44, 42, 42); */
+  /* background-color: #F6F6F6; */
+}
+
+small {
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-flow: column;
+  font-size: 16px;
+}
+
+nav {
+  background-color: #221F1F;
+  color:  white;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  position:fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+header {
+  padding: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+header img {
+  border-radius: 100px;
+  border: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.tag {
+  display: flex;
+  justify-content: center
+}
+
+.tag-view {
+  border-radius: 10px;
+  border: 0;
+  background-color: #21282c;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  width: auto;
+  height: auto;
+  margin-left: 5px;
+  padding-left: 5px;  
+  padding-right: 5px;  
+  transition-property: background-color;
+  transition: .8s;
+  opacity: 1;
+}
+
+.tag-view:hover{
+  background-color: #FFFFFF;
+  color:#21282c;
+}
+
+.burger-buttom {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top:5px;
+  color: white;
+}
+
+.footer {
+  outline: 1px;
+  height: 12rem;
+  margin-top: auto;
+  background-color: #221F1F;
+  line-height: 6rem;
+  text-align: center;
+  color: white;
+  display: flex;   
+  flex-wrap: wrap;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-container {
+  display: flex;   
+  color: black;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;   
+  color: black;
+  align-items: center;
+}
+
+.social-facebook {
+  background-image: url(../images/facebook.svg);
+  background-repeat:round;
+  height: 60px;  
+  width: 60px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.social-instagram {
+  background-image: url(../images/instagram.svg);
+  background-repeat:round;
+  height: 60px;  
+  width: 60px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.social-twitter {
+  background-image: url(../images/twitter.svg);
+  background-repeat:round;
+  height: 60px;  
+  width: 60px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.social-git {
+  background-image: url(../images/github.svg);
+  background-repeat:round;
+  height: 60px;  
+  width: 60px;
+  margin-left:10px;
+}
+
+@media screen and (max-width:900px)
+{
+  .burger-buttom {
+    display: block;
+    background-color: #221F1F;
+  }
+
+  .menu {
+    position: fixed;
+    background:#221F1F;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    width: 90vw;
+    /* height: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  .footer {
+    justify-content: center;  
+  }
+}
